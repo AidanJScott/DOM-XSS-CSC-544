@@ -5,8 +5,6 @@ SET PATH=php
 
 SET FILES=dir
 
-ECHO FILES
-
 IF EXIST database.sqlite (
     DEL database.sqlite
 )
