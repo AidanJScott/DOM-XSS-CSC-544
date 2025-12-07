@@ -3,10 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <title>CSC 544</title>
+    <style>
+        #buttons{
+            display: flex;
+            width: 80%;
+        }
+        #buttons button{
+            background-color: blue;
+            color: white;
+            margin: 1rem;
+        }
+        #buttons button:hover{
+            opacity: 0.7;
+        }
+    </style>
 </head>
 <body>
     <h1>SQL & XSS Capture the Flag</h1>
-    
+    <div id="buttons">
+        <button onclick="location.href='wafbased.php'">WAF-Based SQL Injection Challenge</button>
+        <button onclick="location.href='URLbased.php'">URL-Based SQL Injection Challenge</button>
+        <button onclick="location.href='serverbased.php'">Server-Based SQL Injection Challenge</button>
+        <button onclick="location.href='domxss.php'">DOM-Based XSS Challenge</button>
+        <button onclick="location.href='storedxss.php'">Stored XSS Challenge</button>
+        <button onclick="location.href='reflectedxss.php'">Reflected XSS Challenge</button>
+    </div>
     <form action="ctf.php" method="post">
         <div>
             <label for="sqlwaf">WAF-Based SQL Injection Key:</label><br>
@@ -15,6 +36,7 @@
         <div>
             <button type="submit">Submit</button>
         </div>
+
     </form>
 
     
