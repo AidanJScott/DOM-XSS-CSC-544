@@ -31,7 +31,7 @@
             echo "</div>";
             echo "</form>";
         }
-        if (isset($_POST['xssreflected']) || isset($_POST['xssstored']) || isset($_POST['sqlserver']) || isset($_POST['xssdom']) || (isset($_POST['sqlurl']) && $_POST['sqlurl'] == "urlkey")) {
+        if (isset($_POST['xssreflected']) || isset($_POST['xssstored']) || isset($_POST['sqlserver']) || isset($_POST['xssdom']) || (isset($_POST['sqlurl']) && $_POST['sqlurl'] == "ribbit")) {
             echo "<form action=\"ctf.php\" method=\"post\">";
             echo "<div>";
             echo "<label for=\"sqlserver\">Server-Based SQL Injection Key:</label><br>";
