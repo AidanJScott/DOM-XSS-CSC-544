@@ -42,7 +42,7 @@
     
     
     <?php 
-        if ((isset($_POST['xssreflected']) || isset($_POST['xssstored']) || isset($_POST['xssdom']) || isset($_POST['sqlserver']) || isset($_POST['sqlurl'])) || isset($_POST['xssdom']) || (isset($_POST['sqlwaf']) && $_POST['sqlwaf'] == "wafkey")) {
+        if ((isset($_POST['xssreflected']) || isset($_POST['xssstored']) || isset($_POST['xssdom']) || isset($_POST['sqlserver']) || isset($_POST['sqlurl'])) || isset($_POST['xssdom']) || (isset($_POST['sqlwaf']) && $_POST['sqlwaf'] == "phrog")) {
             echo "<form action=\"ctf.php\" method=\"post\">";
             echo "<div>";
             echo "<label for=\"sqlurl\">URL-Based SQL Injection Key:</label><br>";
